@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    // id("maven-publish")
+    id("maven-publish")
 }
 
 android {
@@ -55,16 +55,15 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-// publishing {
-//     publications {
-//         register<MavenPublication>("release") {
-//             // groupId = "jk.labs.sample.sample.compose"
-//             // artifactId = "nebula"
-//             // version = "1.0.1"
-//
-//             afterEvaluate {
-//                 from(components["release"])
-//             }
-//         }
-//     }
-// }
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            // groupId = "jk.labs.sample.sample.compose"
+            // artifactId = "nebula"
+            // version = "1.0.1"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
