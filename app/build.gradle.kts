@@ -67,5 +67,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // NEBULA Lib
-    implementation(libs.nebula.sample)
+    // implementation(libs.nebula.sample)
 }
