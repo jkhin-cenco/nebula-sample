@@ -22,4 +22,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "SampleComposeLib"
 include(":app")
-include(":nebula")
